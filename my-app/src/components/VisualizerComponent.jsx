@@ -17,7 +17,7 @@ const VisualizerComponent = ({ numbers }) => {
             backgroundColor: 'lightgreen',
             margin: '0 10px',
             display: 'flex',
-          alignItems:'center'
+            alignItems:'center'
           }}
         >
           {num}
