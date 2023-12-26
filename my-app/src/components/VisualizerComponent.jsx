@@ -14,7 +14,7 @@ const VisualizerComponent = ({ numbers }) => {
           style={{
             width: `${20 + num * 5}px`,
             height: '380px',
-            backgroundColor: 'lightgreen',
+            backgroundColor: 'lightblue',
             margin: '0 10px',
             display: 'flex',
             alignItems:'center'
