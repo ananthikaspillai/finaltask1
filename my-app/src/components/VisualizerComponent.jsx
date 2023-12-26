@@ -1,8 +1,9 @@
+
 import React from 'react';
 
 const VisualizerComponent = ({ numbers }) => {
   if (!numbers || !Array.isArray(numbers)) {
-    return ;
+    return null; 
   }
 
   return (
@@ -12,12 +13,11 @@ const VisualizerComponent = ({ numbers }) => {
           key={index}
           style={{
             width: `${20 + num * 5}px`,
-            height: '400px',
+            height: '380px',
             backgroundColor: 'lightgreen',
             margin: '0 10px',
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+          alignItems:'center'
           }}
         >
           {num}

@@ -29,10 +29,11 @@ const BubbleSortComponent = () => {
   };
 
   return (
-    <div>
-      <div style={{ display: 'flex', marginLeft: '400px' }}>
+    <div style={{marginLeft:"510px"}}>
+      <h1 style={{color:'brown'}}>Bubble Sort</h1>
+      <div>
         <label>
-          <h3>Enter Numbers</h3>
+          <h3 style={{marginLeft:'20px'}}>Enter Numbers</h3>
           <input
             type="text"
             value={inputNumbers}
@@ -40,7 +41,7 @@ const BubbleSortComponent = () => {
           />
         </label>
       </div>
-      <button style={{ marginLeft: '400px' }} onClick={visualizeBubbleSort}>
+      <button style={{marginTop:'10px',backgroundColor:'beige',borderRadius:'10px',marginLeft:'40px'}} onClick={visualizeBubbleSort}>
         Sort Numbers
       </button>
       <VisualizerComponent numbers={numbers} />
