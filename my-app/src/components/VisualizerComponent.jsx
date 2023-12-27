@@ -6,21 +6,24 @@ const VisualizerComponent = ({ numbers }) => {
     return null; 
   }
 
+  const maxValue = Math.max(...numbers); 
+
   return (
-    <div style={{ display: 'flex', marginTop: '20px' }}>
+    <div style={{ display: 'flex', marginTop: '20px', transform: 'scaleY(-1)' }}> {/* Add this line */}
       {numbers.map((num, index) => (
         <div
           key={index}
           style={{
-            width: `${20 + num * 5}px`,
-            height: '380px',
+            width: '25px',
+            height: `${(num / maxValue) * 300}px`, 
             backgroundColor: 'lightblue',
-            margin: '0 10px',
+            margin: ' 10px',
             display: 'flex',
-            alignItems:'center'
+            flexDirection: 'column',
+            justifyContent:'normal'
           }}
         >
-          {num}
+          <span style={{ transform: 'scaleY(-1)' }}>{num}</span> {/* Add this line */}
         </div>
       ))}
     </div>
@@ -28,3 +31,5 @@ const VisualizerComponent = ({ numbers }) => {
 };
 
 export default VisualizerComponent;
+
+
