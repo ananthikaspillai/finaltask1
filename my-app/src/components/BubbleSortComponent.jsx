@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import VisualizerComponent from './VisualizerComponent';
 
 const BubbleSortComponent = () => {
-  const [inputNumbers, setInputNumbers] = useState('');
-  const [numbers, setNumbers] = useState([]);
+   const [inputNumbers, setInputNumbers] = useState('');
+   const [numbers, setNumbers] = useState([]);
 
-  const handleInputChange = (event) => {
+   const handleInputChange = (event) => {
     setInputNumbers(event.target.value);
   };
 
-  const visualizeBubbleSort = async () => {
+const visualizeBubbleSort = async () => {
     const arr = inputNumbers.split(',').map(Number);
 
     let swapped = true;
@@ -50,5 +50,4 @@ const BubbleSortComponent = () => {
     </div>
   );
 };
-
 export default BubbleSortComponent;
