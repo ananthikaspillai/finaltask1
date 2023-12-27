@@ -9,7 +9,7 @@ const VisualizerComponent = ({ numbers }) => {
   const maxValue = Math.max(...numbers); 
 
   return (
-    <div style={{ display: 'flex', marginTop: '20px', transform: 'scaleY(-1)' }}> {/* Add this line */}
+    <div style={{ display: 'flex', marginTop: '20px', transform: 'scaleY(-1)' }}>
       {numbers.map((num, index) => (
         <div
           key={index}
@@ -23,7 +23,7 @@ const VisualizerComponent = ({ numbers }) => {
             justifyContent:'normal'
           }}
         >
-          <span style={{ transform: 'scaleY(-1)' }}>{num}</span> {/* Add this line */}
+          <span style={{ transform: 'scaleY(-1)' }}>{num}</span>
         </div>
       ))}
     </div>
