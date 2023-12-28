@@ -50,4 +50,5 @@ const visualizeBubbleSort = async () => {
     </div>
   );
 };
+
 export default BubbleSortComponent;
