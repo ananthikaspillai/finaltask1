@@ -7,7 +7,6 @@ import BubbleSortComponent from './components/BubbleSortComponent'
 import VisualizerComponent from '../src/components/VisualizerComponent'
 function App() {
   
-
   return (
     <>
     <BubbleSortComponent/>
